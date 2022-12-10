@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>index.html</title>
+  <style>
+  body {
+    background-color: #B2EBF2;
+    font-family: sans-serif;
+  }
+  </style>
+</head>
+<body>
+  <h1>DeepWork課題</h1>
+  <form action="{% url 'move_to_registration' %}" method="post">
+    {% csrf_token %}
+    <input type="submit" name="move_to_registration" value='登録画面へ'> 
+  </form>
+</body>
+</html>
