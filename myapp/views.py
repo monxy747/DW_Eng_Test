@@ -10,12 +10,10 @@ from importlib.resources import path
 def index(request):
     return render(request,'myapp/index.html')
 
-def move_to_registration(request):
-    return render(request,'myapp/register.html')
-
+'''
 def move_to_result(request):
-    return render(request,'myapp/register.html')
-
+    return render(request,'myapp/result.html')
+'''
 
 
 class GetImageClassView:
@@ -34,7 +32,7 @@ class GetImageClassView:
 
 def regist(request):
     
-    #image_pathは一旦決め打ちで変数に登録。画面のformで入力してもらうなど
+    #image_pathは一旦決め打ちで変数に登録。画面のformで入力してもらうなど?
     path = "/image/test.jpg"
 
     #api叩いてレスポンスを受け取る。timestampを生成(UNIX時間)
